@@ -1,9 +1,26 @@
 <%- include("./partials/header.ejs") %>
 
-  <!-- NOTICES SECTION STARTS -->
+  <!-- HERO SECTION STARTS -->
+  <section class="h-3/4 relative" style="background: #254D56;">
+    <div class="absolute bottom-0 h-5/6 w-5/6" style="background: #12262B;transform: rotate(-2.29deg)"></div>
+    <div class="absolute bottom-0 h-5/6 w-5/6" style="background: #2B5964;transform: rotate(-0.92deg)"></div>
+    <div class="absolute bottom-0 right-2 h-5/6 w-5/6" style="background: #12262B;transform: rotate(2.69deg)"></div>
+    <div class="absolute bottom-0 right-2 h-5/6 w-5/6" style="background: #2B5964;transform: rotate(1.42deg)"></div>
+    <div class="absolute h-full w-full px-4 md:px-36 py-8 flex justify-center" style="background: #254D56;">
+      <div class="w-7/12 pt-10">
+        <h1 class="text-9xl text-white font-black">HOSTEL</h1>
+        <h1 class="text-6xl text-white font-black pt-4">AFFAIRS BOARD</h1>
+      </div>
+      <div class="w-5/12">
+        ANNOUNCEMENTS
+      </div>
+    </div>
+  </section>
+  <!-- HERO SECTION ENDS -->
 
-  <section id="notices" class="text-gray-600 body-font">
-    <h2>Notices</h2>
+  <!-- NOTICES SECTION STARTS -->
+  <section id="notices" class="text-gray-600 body-font md:px-32 py-12">
+    <h1 class="text-3xl font-bold">NOTICES</h1>
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap -mx-4 -my-8">
         <% notices.forEach((notice)=>{ %>
@@ -37,7 +54,6 @@
     </div>
 
   </section>
-
   <!-- NOTICES SECTION ENDS -->
 
   <%- include("./partials/footer.ejs") %>
