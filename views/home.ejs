@@ -11,8 +11,22 @@
         <h1 class="text-9xl text-white font-black">HOSTEL</h1>
         <h1 class="text-6xl text-white font-black pt-4">AFFAIRS BOARD</h1>
       </div>
-      <div class="w-5/12">
-        ANNOUNCEMENTS
+      <div class="w-5/12 py-10 px-12">
+        <div class="py-2 text-white font-semibold text-base text-center" style="background-color: #1f4047;">
+          ANNOUNCEMENTS
+        </div>
+        <% for(let i=1;i<=4;i++){ %>
+          <div class="relative w-full my-2 font-semibold text-base text-center" style="height: 40px;">
+            <div class="absolute top-0 py-2 h-full w-full"
+              style="background-color: #0d1b1e;transform: rotate(-1.91deg)">
+            </div>
+            <div class="absolute top-0 py-2 h-full w-full"
+              style="background-color: #8DC2CE;transform: rotate(-1.17deg)">
+            </div>
+            <div class="absolute top-0 py-2 w-full bg-white">Annoucement #<%=i%><span
+                  class="ml-2 font-normal text-xs px-1 py-0.5 rounded-sm" style="background: #C6E1E7;">NEW</span></div>
+          </div>
+          <%} %>
       </div>
     </div>
   </section>
@@ -52,7 +66,6 @@
           <% }) %>
       </div>
     </div>
-
   </section>
   <!-- NOTICES SECTION ENDS -->
 
