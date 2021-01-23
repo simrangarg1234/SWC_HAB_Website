@@ -6,12 +6,13 @@
     <div class="absolute bottom-0 h-5/6 w-5/6" style="background: #2B5964;transform: rotate(-0.92deg)"></div>
     <div class="absolute bottom-0 right-2 h-5/6 w-5/6" style="background: #12262B;transform: rotate(2.69deg)"></div>
     <div class="absolute bottom-0 right-2 h-5/6 w-5/6" style="background: #2B5964;transform: rotate(1.42deg)"></div>
-    <div class="absolute h-full w-full px-4 md:px-36 py-8 flex justify-center" style="background: #254D56;">
-      <div class="w-7/12 pt-10">
-        <h1 class="text-9xl text-white font-black">HOSTEL</h1>
-        <h1 class="text-6xl text-white font-black pt-4">AFFAIRS BOARD</h1>
+    <div class="absolute h-full w-full px-4 md:px-36 py-8 flex flex-col md:flex-row justify-center"
+      style="background: #254D56;">
+      <div class="md:w-7/12 pt-10">
+        <h1 class="text-6xl md:text-9xl text-white text-center md:text-left font-black">HOSTEL</h1>
+        <h1 class="text-3xl md:text-6xl text-white text-center md:text-left font-black pt-4">AFFAIRS BOARD</h1>
       </div>
-      <div class="w-5/12 py-10 px-12">
+      <div class="md:w-5/12 py-10 px-12">
         <div class="py-2 text-white font-semibold text-base text-center" style="background-color: #1f4047;">
           ANNOUNCEMENTS
         </div>
@@ -33,12 +34,13 @@
   <!-- HERO SECTION ENDS -->
 
   <!-- NOTICES SECTION STARTS -->
-  <section id="notices" class="text-gray-600 body-font md:px-32 py-12">
-    <h1 class="text-3xl font-bold">NOTICES</h1>
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap -mx-4 -my-8">
+  <section id="notices" class="text-gray-600 body-font px-6 md:px-32 py-12">
+    <h1 class="px-4 text-3xl text-center md:text-left font-bold">NOTICES</h1>
+    <div class="container px-5 py-12 md:py-16 mx-auto">
+      <!-- <div class="flex flex-wrap -mx-4 -my-8"> -->
+      <div class="grid gap-12 grid-cols-1 md:grid-cols-2 2xl:grid-cols-3">
         <% notices.forEach((notice)=>{ %>
-          <div class="py-8 px-4 lg:w-1/3">
+          <div class="py-8 px-4 my-2 md:mx-4 bg-gray-200">
             <div class="h-full flex items-start">
               <div class="w-12 flex-shrink-0 flex flex-col text-center leading-none">
                 <span class="text-gray-500 pb-2 mb-2 border-b-2 border-gray-200">

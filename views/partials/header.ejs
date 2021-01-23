@@ -23,15 +23,10 @@
         <span class="ml-3 text-xl font-black text-3xl text-white">HAB</span>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <% if(!currentUser){ %>
-          <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#notices">NOTICES</a>
-          <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#">HOSTELS</a>
-          <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#">MANAGEMENT</a>
-          <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#">ORDINANCE AND RULES</a>
-          <% }else{ %>
-            <a class="mr-5 hover:text-gray-900">Signed in as <%= currentUser.username %> </a>
-            <a class="mr-5 hover:text-gray-900" href="/logout">Logout</a>
-            <%}%>
+        <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#notices">NOTICES</a>
+        <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#">HOSTELS</a>
+        <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#">MANAGEMENT</a>
+        <a class="mr-5 hover:text-opacity-50 font-bold text-sm text-white" href="#">ORDINANCE AND RULES</a>
       </nav>
     </div>
   </header>
