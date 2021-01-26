@@ -180,6 +180,9 @@ router.post("/profile", middleware.isLoggedIn, async (req, res) => {
   const user = await User.findByIdAndUpdate(id, { name, contact });
   res.redirect("/profile");
 });
+router.get("/hostels", (req, res) => {
+  res.render("hostel");
+});
 
 const compare = (a, b) => {
   return b.creation - a.creation;
